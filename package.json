@@ -1,8 +1,33 @@
 {
   "name": "@local/deepseek-web-chat",
   "version": "1.0.0",
+  "description": "Show the full chat.deepseek.com web chat inside DeepSeek Harness through its built-in browser tab (a native Electron webview on desktop), with a system-browser fallback.",
   "private": true,
   "type": "module",
+  "license": "MIT",
+  "author": "Yuxuanshi0129",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "chat",
+    "web-chat",
+    "webview",
+    "sidebar-browser",
+    "interface"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuxuanshi0129/deepseek-web-chat-plugin.git"
+  },
+  "homepage": "https://github.com/Yuxuanshi0129/deepseek-web-chat-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/Yuxuanshi0129/deepseek-web-chat-plugin/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -14,7 +39,9 @@
     "client.js",
     "cordis.patch.yml",
     "locale/*.json",
-    "icon.svg"
+    "icon.svg",
+    "README.md",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },

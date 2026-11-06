@@ -39,7 +39,7 @@ ctx.sidebarRight.openTab('browser', { params: { url: 'https://chat.deepseek.com'
 
 ## Install
 
-This is a **Cordis bundle**. Install it from a local clone (the supported path):
+This is a **Cordis bundle**. Install it from the plugin market once listed, or from a local clone (the supported path):
 
 ```bash
 git clone https://github.com/Yuxuanshi0129/deepseek-web-chat-plugin.git
@@ -94,6 +94,16 @@ plugin_manager remove_bundle @local/deepseek-web-chat
 - v1 initially attempted an optional iframe view; that was removed because of the `frame-ancestors 'none'` CSP.
 - A "click does nothing" bug was fixed by pairing the `sidebar.panellist` row with a `main` panel of the **same id** (the shell's row click calls `layout.selectPanel(id)` and throws if no matching `main` entry exists).
 - The `sidebarRight.openTab()` "no session surface is mounted" error is avoided by returning to the Conversation before opening the tab.
+
+---
+
+## Publishing / market listing
+
+- Source & Issues: <https://github.com/Yuxuanshi0129/deepseek-web-chat-plugin>
+- License: MIT (`license` field in `package.json` + [LICENSE](LICENSE)).
+- `engines.dsh`: `>=0.2.0-rc.2 <0.3.0-0` — tested on DeepSeek Harness Desktop `0.2.2-rc.1` (Windows, Electron Web GUI).
+- Install source: a pinned GitHub commit (no npm release yet). `package.json` declares `dsh.bundle.patch: ./cordis.patch.yml`; the root directory is directly installable with `package.json`, `cordis.patch.yml`, `index.js`, `client.js`, `locale/*.json` and `icon.svg` all present.
+- No npm lifecycle scripts, no runtime dependencies, no network requests by the plugin itself (the chat page is loaded by Harness's own built-in browser), no host files modified, no credentials read.
 
 ---
 

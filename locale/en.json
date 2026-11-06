@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek web chat",
+    "description": "Adds a sidebar panel that opens the full chat.deepseek.com web chat inside Harness's built-in browser tab (native Electron webview on desktop), with a system-browser fallback."
+  }
+}

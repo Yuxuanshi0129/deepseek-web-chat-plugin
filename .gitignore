@@ -1,0 +1,20 @@
+# Dependencies / profile links
+node_modules/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Local install artifacts
+*.zip
+*.tgz
+*.tar.gz
+
+# Local probe / scratch files
+_probe_*

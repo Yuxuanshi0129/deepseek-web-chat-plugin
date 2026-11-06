@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek 网页版聊天",
+    "description": "在侧栏新增一个面板，一键把完整的 chat.deepseek.com 网页版显示在 Harness 自带的内置浏览器标签中（桌面版为 Electron 原生 webview），并提供系统浏览器打开作为兜底。"
+  }
+}
